@@ -8,15 +8,15 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 # for Chrome driver 
-# from shutil import which
+from shutil import which
   
-# SELENIUM_DRIVER_NAME = 'chrome'
-# SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')
-# SELENIUM_DRIVER_ARGUMENTS=['--headless']  
+SELENIUM_DRIVER_NAME = 'chrome'
+SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')
+SELENIUM_DRIVER_ARGUMENTS=['--headless']  
   
-# DOWNLOADER_MIDDLEWARES = {
-#      'scrapy_selenium.SeleniumMiddleware': 800
-#      }
+DOWNLOADER_MIDDLEWARES = {
+     'scrapy_selenium.SeleniumMiddleware': 800
+     }
 
 
 BOT_NAME = "cnnscrapper"
